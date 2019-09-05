@@ -19,23 +19,23 @@ pygame.init()
 fenetre = pygame.display.set_mode((240, 240))
 
 #Chargement et collage du fond
-fond = pygame.image.load("background.png").convert()
+fond = pygame.image.load("img/background.png").convert()
 fenetre.blit(fond, (0,0))
 
 #Chargement et collage du personnage
-pawnW = pygame.image.load("white_pawn.png").convert_alpha()
-rookW = pygame.image.load("white_rook.png").convert_alpha()
-knightW = pygame.image.load("white_knight.png").convert_alpha()
-bishopW = pygame.image.load("white_bishop.png").convert_alpha()
-queenW = pygame.image.load("white_queen.png").convert_alpha()
-kingW = pygame.image.load("white_king.png").convert_alpha()
+pawnW = pygame.image.load("img/white_pawn.png").convert_alpha()
+rookW = pygame.image.load("img/white_rook.png").convert_alpha()
+knightW = pygame.image.load("img/white_knight.png").convert_alpha()
+bishopW = pygame.image.load("img/white_bishop.png").convert_alpha()
+queenW = pygame.image.load("img/white_queen.png").convert_alpha()
+kingW = pygame.image.load("img/white_king.png").convert_alpha()
 
-pawnB = pygame.image.load("black_pawn.png").convert_alpha()
-rookB = pygame.image.load("black_rook.png").convert_alpha()
-knightB = pygame.image.load("black_knight.png").convert_alpha()
-bishopB = pygame.image.load("black_bishop.png").convert_alpha()
-queenB = pygame.image.load("black_queen.png").convert_alpha()
-kingB = pygame.image.load("black_king.png").convert_alpha()
+pawnB = pygame.image.load("img/black_pawn.png").convert_alpha()
+rookB = pygame.image.load("img/black_rook.png").convert_alpha()
+knightB = pygame.image.load("img/black_knight.png").convert_alpha()
+bishopB = pygame.image.load("img/black_bishop.png").convert_alpha()
+queenB = pygame.image.load("img/black_queen.png").convert_alpha()
+kingB = pygame.image.load("img/black_king.png").convert_alpha()
 
 taille_sprite = 30
 

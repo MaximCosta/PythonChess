@@ -8,11 +8,11 @@ pygame.init()
 fenetre = pygame.display.set_mode((240, 240))
 
 #Chargement et collage du fond
-fond = pygame.image.load("background.png").convert()
+fond = pygame.image.load("img/background.png").convert()
 fenetre.blit(fond, (0,0))
 
 #Chargement et collage du personnage
-perso = pygame.image.load("perso.png").convert_alpha()
+perso = pygame.image.load("img/black_pawn.png").convert_alpha()
 fenetre.blit(perso, (30, 30))
 taille_sprite = 30
 plate = [["T", "C", "F", "D", "R", "F", "C", "T"],
