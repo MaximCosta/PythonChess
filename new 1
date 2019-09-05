@@ -1,0 +1,214 @@
+X|a|b|c|d|e|f|g|h|
+1|T|C|F|D|R|F|C|T|
+2|P|P|P|P|P|P|P|P|
+3|#|#|#|#|#|#|#|#|
+4|#|#|#|#|#|#|#|#|
+5|#|#|#|#|#|#|#|#|
+6|#|#|#|#|#|#|#|#|
+7|P|P|P|P|P|P|P|P|
+8|T|C|F|R|D|F|C|T|
+
+plate = [["T", "C", "F", "D", "R", "F", "C", "T"],
+         ["P", "P", "P", "P", "P", "P", "P", "P"],
+         ["#", "#", "#", "#", "#", "#", "#", "#"],
+         ["#", "#", "#", "#", "#", "#", "#", "#"],
+         ["#", "#", "#", "#", "#", "#", "#", "#"],
+         ["#", "#", "#", "#", "#", "#", "#", "#"],
+         ["p", "p", "p", "p", "p", "p", "p", "p"],
+         ["t", "c", "f", "d", "r", "f", "c", "t"]]
+
+alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+
+TN = ["a1", "h1", "T"]
+intp= input()
+intp = "a1,a3,T" 
+chesspi =['a1', 'a3', 'T']
+
+
+chesspion(CN[0][0],CN[0][1],CN[len(CN)-1])
+
+holdPlate, newPlate = []
+
+def PlateUpdate(intp, plate):
+    holdPlate, newPlate = []
+    chesspi = intp.split(",")
+    holdPlate = list(plate[int(chesspi[0][1])-1])
+	holdPlate[alpha.index(chesspi[0][0])] = "#"
+	newPlate = list(plate[int(chesspi[1][1])-1])
+	newPlate[alpha.index(chesspi[1][0])] = chesspi[2]
+	plate[int(chesspi[0][1])-1] = holdPlate
+	plate[int(chesspi[1][1])-1] = newPlate
+	
+
+def chesspion(li,p,pi):
+	plate[int(p)-1][alpha.index(li)][] = pi
+
+plate = [("#","#","#","#","#","#","#","#"),
+		 ("#","#","#","#","#","#","#","#"),
+		 ("#","#","#","#","#","#","#","#"),
+		 ("#","#","#","#","#","#","#","#"),
+		 ("#","#","#","#","#","#","#","#"),
+		 ("#","#","#","#","#","#","#","#"),
+		 ("#","#","#","#","#","#","#","#"),
+		 ("#","#","#","#","#","#","#","#")]
+
+def mi:
+	print(aplha)
+	
+|   | a | b | c | d | e | f | g | h |
+-------------------------------------
+| 1 | T | C | F | D | R | F | C | T |
+-------------------------------------
+| 2 | P | P | P | P | P | P | P | P |
+-------------------------------------
+| 3 | # | # | # | # | # | # | # | # |
+-------------------------------------
+| 4 | # | # | # | # | # | # | # | # |
+-------------------------------------
+| 5 | # | # | # | # | # | # | # | # |
+-------------------------------------
+| 6 | # | # | # | # | # | # | # | # |
+-------------------------------------
+| 7 | p | p | p | p | p | p | p | p |
+-------------------------------------
+| 8 | t | c | f | d | r | f | c | t |
+
+
+| 0 | a | b | c | d | e | f | g | h
+-----------------------------------
+| 1 | T | C | F | D | R | F | C | T
+-----------------------------------
+| 2 | P | P | P | P | P | P | P | P
+-----------------------------------
+| 3 | # | # | # | # | # | # | # | #
+-----------------------------------
+| 4 | # | # | # | c | # | # | # | #
+-----------------------------------
+| 5 | # | # | # | # | # | # | # | #
+-----------------------------------
+| 6 | # | # | X | # | # | # | # | #
+-----------------------------------
+| 7 | p | p | p | p | p | p | p | p
+-----------------------------------
+| 8 | t | c | f | d | r | f | c | t
+
+
+def verif():
+	# piece a nous
+	# piece exist
+	# piece position is good
+	# piece new location is in plate
+	piece chemin is good
+	piece new position is clear or piece adverse
+	
+
+
+
+
+
+| 9 | a | b | c | d | e | f | g | h |
+-------------------------------------
+| 8 | # | # | # | # | # | # | # | # | <-- Noir zx = 2;zy = 2
+-------------------------------------
+| 7 | # | # | # | P | # | # | # | # |
+-------------------------------------
+| 6 | # | # | # | # | # | # | # | # |
+-------------------------------------
+| 5 | # | # | # | # | # | # | # | # |
+-------------------------------------
+| 4 | # | # | # | P | # | # | # | # |
+-------------------------------------
+| 3 | # | # | # | # | # | # | # | # |
+-------------------------------------
+| 2 | # | # | # | # | # | # | # | # |
+-------------------------------------
+| 1 | # | # | # | # | # | # | # | # | <-- Blanc
+
+y,x == chesspi[0][1],chesspi[0][0]
+zx,zy == 1<=z>=8
+zx = alpha.index(chesspi[1][0])-alpha.index(chesspi[0][0])
+zy = int(chesspi[1][1])-int(chesspi[0][1])
+
+cavalier=["y+2 and x+1",
+		  "y+2 and x-1",
+		  "y-2 and x+1",
+		  "y-2 and x-1",
+		  "x+2 and y+1",
+		  "x+2 and y-1",
+		  "x-2 and y+1",
+		  "x-2 and y-1"]
+		  
+pions:   [if Noir: y-1,
+		  if Noir&y==7: y-2,
+		  if Noir&y-1"x-1/x+1"==blanc: y-1"x-1/x+1"
+		  if Blanc: y+1,
+		  if Blanc&y==8: y+2,
+		  if Blanc&y+1"x-1/x+1"==noir: y+1"x-1/x+1"]
+		  
+Tours:	 [y+zy;x,
+		  y-zy;x,
+		  x+zx;y,
+		  x-zx;y]
+		  
+Fous:	 [,
+		  x-zx;y-zy,
+		  ,
+		  x-zx;y+zy]
+		  
+dame:	 [y+zy;x,
+		  y-zy;x,
+		  x+zx;y,
+		  x-zx;y,
+		  x+zx;y+zy,
+		  x-zx;y-zy,
+		  x+yx;y-zy,
+		  x-zx;y+zy]
+		  
+roi:	 [y+1,
+		  y-1,
+		  x+1,
+		  x-1,
+		  x+1;y+1,
+		  x-1;y-1,
+		  x+y;y-1,
+		  x-1;y+1]
+
+# permet de verifier chaque position si elle est possible
+for i in range (1,max(zx,zy)+1):
+		equation en fonction de i
+
+
+
+
+
+		
+T = [(y + zy, x),
+     (y, x + zx)]
+(ny, nx)	 
+
+
+def FouMoveVerif(zx, zy, x, y, nx, ny, plate, piece, pieceAdv):
+    if zx < 0:
+        tx = -1
+    elif zx > 0:
+        tx = 1
+    if zy < 0:
+        ty = -1
+    elif zy > 0:
+        ty = 1
+    F = [(x + zx, y + zy, zy**2 == zx**2, not plate[-y + ty][x + tx] in piece, not plate[-y + ty][x + tx] in pieceAdv or x + tx == nx and y + ty == ny)]
+    for i in range(1, max(zx, zy)):
+        x += tx
+        y += ty
+        if F[0] == (nx, ny, True):
+            continue
+        else:
+            error('CantMove(obstacle)')
+            break
+
+
+D = [(y + zy, x + zx, zy**2 == zx**2),
+     (y + zy, x, True),
+     (y, x + zx, True)]
+(ny, nx, True)		 
+		 
